@@ -1,4 +1,4 @@
-console.log('wassup');
+console.log('HELLO');
 
 
 const buttonAlert = () => {
