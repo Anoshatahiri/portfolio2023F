@@ -3,32 +3,38 @@
 <head>
     <title>Portfolio</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./javascript.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
+    <div class=" triangle triangle-left"></div>
+    <div class=" triangle triangle-right"></div>
+    
     <header>
-        <h1 id="s1">Welcome to my page</h1>
+        <h1 id="s1">ANOSHA TAHIRI</h1>
     </header>
 
-    <nav>
+    <nav id="navigation">
         <ul>
             <li><a href="#Biography">About Me</a></li>
             <li><a href="#Images">Images</a></li>
-            <li><a href="#Links">Links</a></li>
+            <li><a href="links.html#Links" target="_blank">Links</a></li>
             <li><a href="#Contact">Contacts</a></li>
+            <button id="btn-alert" onclick="buttonAlert()"> hover button </button>
         </ul>
     </nav>
 
     <div>
-        <div id="Buttons">
-            <h2>Press here for food</h2>
+        <div id="links">
+            <h2 id="Redirections">Redirections</h2>
             <ul>
                 <li><a href="https://www.google.com/search?q=pho&client=safari&sca_esv=580697965&rls=en&tbm=isch&sxsrf=AM9HkKm3y3wXbHT8LRsfsmVT9Oa8bZz1Ew:1699492431617&source=lnms&sa=X&ved=2ahUKEwjUi73V3rWCAxW4LzQIHW2-CXUQ_AUoAnoECAMQBA&biw=1306&bih=726&dpr=2#imgrc=ewXXprDoMiovYM">Image</a></li>
                 <li><a href="https://www.google.com/search?q=vodka+cran&client=safari&sca_esv=580697965&rls=en&tbm=isch&sxsrf=AM9HkKnBj_D1EhE6lI6PIk8KdJ7mO5ZZFQ:1699492521013&source=lnms&sa=X&ved=2ahUKEwiht42A37WCAxWkJTQIHXAuCkYQ_AUoAXoECAEQAw&biw=1306&bih=726&dpr=2#imgrc=rH3vzytyy3-ivM">Image2</a></li>
+                <button id="buttonCounter"> Press here for number </button>
+                <p> number: <span id="counterText"> 1 </span></p>
             </ul>
         </div>  
     </div>
@@ -36,11 +42,11 @@
     <main>
         <section id="Biography">
             <h2 id="p1">About me</h2>
-            <p> I am 5"2</p>
+            <p id="p1text"> As a student at SAIT enrolled in the Interactive Design Diploma program, I posess a passion for UX design—a field that merges creativity with technology to enhance user experiences. Beyond my academic experiences, I find myself interested in the arts, channeling my creativity into digital and traditional mediums, often exploring philosophical concepts that fuel my curiosity.</p>
         </section>
 
         <section id="Images">
-            <h2>My images</h2>
+            <h2 id="IMAGES">My images</h2>
             <figure>
                 <img src="./assets/IMG_0240.jpeg" width="300">
                 <figcaption> Image 1: cute sisters</figcaption>
@@ -51,17 +57,8 @@
             </figure>
         </section>
 
-        <section id="Links">
-            <h2>Links</h2>
-            <p> Favourite websites:</p>
-            <ul>
-                <li><a href="https://www.theweathernetwork.com/ca/weather/alberta/calgary">weather</a></li>
-                <li><a href="https://www.sait.ca">sait</a></li>
-            </ul>
-        </section>
-
         <section>
-            <h2>My table</h2>
+            <h2 id="tabletitle"> My table</h2>
             <table id="table">
                 <tr>
                     <th>Hello 1</th>
@@ -83,7 +80,7 @@
     </main>
 
     <aside id="Contact">
-        <h2>Contact Info</h2>
+        <h2 id="d1">Contact Info</h2>
         <!-- <p>You can reach me through the <a href="contact.html">contact page</a>.</p> -->
         <p>Email me <a href="mailto:anosha.tahiri@edu.sait.ca">here</a>.</p>
     </aside>
